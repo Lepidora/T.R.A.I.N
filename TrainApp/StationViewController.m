@@ -54,6 +54,7 @@
 
 - (void)getStationData:(CLLocationDegrees) latitude longitude:(CLLocationDegrees) longitude {
     
+    //Original URL: https://data.gov.uk/data/api/service/transport/naptan_railway_stations/nearest?lat=%f&lon=%f
     NSString *apiCallUrl = [NSString stringWithFormat:@"https://augustinas.me/api/nearest?lat=%f&lon=%f&size=30", latitude, longitude];
     
     [self createTableData:apiCallUrl];
